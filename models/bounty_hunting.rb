@@ -15,7 +15,7 @@ class BountyHunting
 
   def save
     db = PG.connect ( { dbname: 'bounty_hunting', host: 'localhost'})
-    sql = ";
+    sql = "
     INSERT INTO hit_list
     (name, danger_level, species, favourite_weapon, last_known_location)
     VALUES
